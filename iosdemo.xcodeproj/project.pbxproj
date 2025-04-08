@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1BC883652D97A74E0092B0DD /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1BC883642D97A74E0092B0DD /* ParseSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1BC883462D97A34D0092B0DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC883652D97A74E0092B0DD /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = iosdemo;
 			packageProductDependencies = (
+				1BC883642D97A74E0092B0DD /* ParseSwift */,
 			);
 			productName = iosdemo;
 			productReference = 1BC8832F2D97A34A0092B0DD /* iosdemo.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 1BC883262D97A34A0092B0DD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1BC883632D97A46A0092B0DD /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1BC883302D97A34A0092B0DD /* Products */;
 			projectDirPath = "";
@@ -569,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BC883632D97A46A0092B0DD /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BC883642D97A74E0092B0DD /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BC883632D97A46A0092B0DD /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BC883272D97A34A0092B0DD /* Project object */;
 }
